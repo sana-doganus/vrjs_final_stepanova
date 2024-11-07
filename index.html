@@ -22,7 +22,17 @@
         <a-animation attribute="rotation" begin="click" dur="2000" to="360 0 360"></a-animation>
         <a-animation attribute="radius" begin="mouseenter" dur="300" to="1.5"></a-animation>
         <a-animation attribute="radius" begin="mouseleave" dur="300" to="1.25"></a-animation> -->
+        <a-animation attribute="rotation" repeat="indefinite dur="5000" to="360 0 0"></a-animation>
       </a-sphere>
+
+       <a-sphere position="-3 0.75 -3.5" rotation="50 0 0" radius="0.75" src="#sphereTexture">
+        <a-animation attribute="rotation" repeat="indefinite dur="5000" to="410 0 0"></a-animation>
+      </a-sphere>
+      
+      <a-sphere position="3 0.25 -4.5" rotation="150 0 0" radius="0.25" src="#sphereTexture">
+        <a-animation attribute="rotation" repeat="indefinite dur="5000" to="510 0 0"></a-animation>
+      </a-sphere>
+      
        <a-entity id="cube" gltf-model="#glasscube" position="0 2 -5"></a-entity>
       
       <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
