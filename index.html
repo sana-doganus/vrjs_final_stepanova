@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Итогг</title>
+    <title>Итог</title>
     <meta name="description" content="Итоговый проект">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
@@ -12,7 +12,7 @@
         <img id="groundTexture" src="stone.jpg">
         <img id="skyTexture" src="nightsky.jpg">
         <a-asset-item id="glasscube"
-            src="cube.glb"
+            src="shrek_dancing.glb"
             response-type="arraybuffer" crossorigin="anonymous"></a-asset-item>
       </a-assets>
       
@@ -33,7 +33,7 @@
         <a-animation attribute="rotation" repeat="indefinite dur="30000" to="0 510 0"></a-animation>
       </a-sphere>
       
-       <a-gltf-model id="cube" src="#glasscube" position="0 2 -5"></a-gltf-model>
+       <a-gltf-model id="cube" src="#glasscube" position="0 1 -5" scale="1 1 1"></a-gltf-model>
       
       <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
       <a-light type="ambient" color="#445451"></a-light>
