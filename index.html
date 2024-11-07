@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Итог</title>
+    <title>Итогг</title>
     <meta name="description" content="Итоговый проект">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
@@ -13,7 +13,6 @@
         <img id="skyTexture" src="sky.jpg">
         <a-asset-item id="glasscube"
             src="cube.glb"
-            scale="1 1 1"
             response-type="arraybuffer" crossorigin="anonymous"></a-asset-item>
       </a-assets>
       
@@ -35,5 +34,10 @@
         <a-cursor color="#FAFAFA"></a-cursor>
       </a-camera>
     </a-scene>
+    <script>
+      var el = document.querySelector('#glasscube');
+      console.log(el.hasLoaded());
+      console.log(el.hasLoaded);
+    </script>
   </body>
 </html>
