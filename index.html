@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Итог</title>
+    <title>Итогг</title>
     <meta name="description" content="Итоговый проект">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
@@ -22,15 +22,15 @@
         <a-animation attribute="rotation" begin="click" dur="2000" to="360 0 360"></a-animation>
         <a-animation attribute="radius" begin="mouseenter" dur="300" to="1.5"></a-animation>
         <a-animation attribute="radius" begin="mouseleave" dur="300" to="1.25"></a-animation> -->
-        <a-animation attribute="rotation" repeat="indefinite dur="5000" to="360 0 0"></a-animation>
+        <a-animation attribute="rotation" repeat="indefinite dur="20000" to="0 360 0"></a-animation>
       </a-sphere>
 
-       <a-sphere position="-3 0.75 -3.5" rotation="50 0 0" radius="0.75" src="#sphereTexture">
-        <a-animation attribute="rotation" repeat="indefinite dur="5000" to="410 0 0"></a-animation>
+       <a-sphere position="-6 0.75 -3.5" rotation="0 50 0" radius="0.75" src="#sphereTexture">
+        <a-animation attribute="rotation" repeat="indefinite dur="50000" to="0 410 0"></a-animation>
       </a-sphere>
       
-      <a-sphere position="3 0.25 -4.5" rotation="150 0 0" radius="0.25" src="#sphereTexture">
-        <a-animation attribute="rotation" repeat="indefinite dur="5000" to="510 0 0"></a-animation>
+      <a-sphere position="3 0.25 -4.5" rotation="0 150 0" radius="0.25" src="#sphereTexture">
+        <a-animation attribute="rotation" repeat="indefinite dur="30000" to="0 510 0"></a-animation>
       </a-sphere>
       
        <a-entity id="cube" gltf-model="#glasscube" position="0 2 -5"></a-entity>
