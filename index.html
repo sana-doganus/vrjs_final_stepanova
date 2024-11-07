@@ -13,7 +13,7 @@
         <img id="groundTexture" src="stone.jpg">
         <img id="skyTexture" src="nightsky.jpg">
         <a-asset-item id="glasscube"
-            src="shrek_dancing.glb"
+            src="sphere.glb"
             response-type="arraybuffer" crossorigin="anonymous">
             </a-asset-item>
       </a-assets>
@@ -35,7 +35,7 @@
         <a-animation attribute="rotation" repeat="indefinite dur="300000" to="0 510 0"></a-animation>
       </a-sphere>
       
-       <a-gltf-model id="cube" src="#glasscube" position="0 1 -5" scale="1 1 1" animation-mixer="loop: repeat;"></a-gltf-model >
+       <a-gltf-model id="cube" src="#glasscube" position="0 2 -5" scale="1 1 1" animation-mixer="loop: repeat;"></a-gltf-model >
       
       <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
       <a-light type="ambient" color="#445451"></a-light>
