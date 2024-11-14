@@ -18,7 +18,7 @@
             </a-asset-item>
       </a-assets>
       
-      <a-sphere position="5 0.5 -5" rotation="0 0 0" radius="0.5" src="#sphereTexture" animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 200000; repeat: indefinite">
+      <a-sphere position="5 0.5 -5" rotation="0 0 0" radius="0.5" src="#sphereTexture" animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 200000; loop: true">
         <!-- <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
           to="0 2.5 -5"></a-animation>
         <a-animation attribute="rotation" begin="click" dur="2000" to="360 0 360"></a-animation>
@@ -28,11 +28,11 @@
         <a-animation attribute="rotation" repeat="indefinite dur="200000" to="0 360 0"></a-animation>
       </a-sphere>
 
-       <a-sphere position="-3 0.75 -5.5" rotation="0 50 0" radius="0.75" src="#sphereTexture" animation="property: rotation; to: 0 410 0; dur: 500000; repeat: indefinite">
+       <a-sphere position="-3 0.75 -5.5" rotation="0 50 0" radius="0.75" src="#sphereTexture" animation="property: rotation; from: 0 50 0; to: 0 410 0; dur: 500000; loop: true">
         <a-animation attribute="rotation" repeat="indefinite dur="500000" to="0 410 0"></a-animation>
       </a-sphere>
       
-      <a-sphere position="3 0.25 -4.5" rotation="0 150 0" radius="0.25" src="#sphereTexture" animation="property: rotation; to: 0 150 0; dur: 300000; repeat: indefinite">
+      <a-sphere position="3 0.25 -4.5" rotation="0 150 0" radius="0.25" src="#sphereTexture" animation="property: rotation; from: 0 150 0; to: 0 150 0; dur: 300000; loop: true">
         <a-animation attribute="rotation" repeat="indefinite dur="300000" to="0 510 0"></a-animation>
       </a-sphere>
       
@@ -40,7 +40,8 @@
       
       <a-sky height="1024" radius="30" src="#skyTexture" theta-length="180" width="1024"></a-sky>
       <a-light type="ambient" color="#75DAFF"></a-light>
-      <a-light type="point" intensity="10" position="0 15 -15"></a-light>
+      <a-light type="point" intensity="10" position="0 15 -5"></a-light>
+       <a-light type="point" intensity="10" position="0 -15 -5"></a-light>
       <a-entity light="type: spot; angle: -90"></a-entity>
       
       <!--<a-light type="point" intensity="1" position="0 15 -15"></a-light>-->
