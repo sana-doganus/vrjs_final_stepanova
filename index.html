@@ -18,7 +18,8 @@
             </a-asset-item>
       </a-assets>
       
-      <a-sphere id="hehe" position="5 0.5 -5" rotation="0 0 0" radius="0.5" src="#sphereTexture" animation="property: rotation; to: 0 360 0; dur: 10000; loop: true; easing: linear;">
+      <a-sphere id="hehe" position="5 4.5 -1.5" rotation="0 0 0" radius="0.5" src="#sphereTexture" animation="property: rotation; to: 0 360 0; dur: 10000; loop: true; easing: linear;"
+         animation__2="property: position.y; to: 2.5"; loop: true; dur: 12000;">
         <!-- <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
           to="0 2.5 -5"></a-animation>
         <a-animation attribute="rotation" begin="click" dur="2000" to="360 0 360"></a-animation>
@@ -27,10 +28,12 @@
         animation="property: rotation; to: 0 360 0; dur: 200000; repeat: indefinite"-->
       </a-sphere>
 
-       <a-sphere position="-3 0.75 -5.5" rotation="0 0 0" radius="0.75" src="#sphereTexture" animation="property: rotation; to: 0 360 0; dur: 12500; loop: true; easing: linear;">
+       <a-sphere position="-3 0.75 -5.5" rotation="0 0 0" radius="0.75" src="#sphereTexture" animation="property: rotation; to: 0 360 0; dur: 12500; loop: true; easing: linear;"
+         animation__2="property: position.y; to: 3.25"; loop: true; dur: 8000;">
       </a-sphere>
       
-      <a-sphere position="3 0.25 -4.5" rotation="0 0 0" radius="0.25" src="#sphereTexture" animation="property: rotation; to: 0 360 0; dur: 7000; loop: true; easing: linear;">
+      <a-sphere position="1 2.25 4.5" rotation="0 0 0" radius="0.25" src="#sphereTexture" animation="property: rotation; to: 0 360 0; dur: 7000; loop: true; easing: linear;"
+         animation__2="property: position.y; to: -0.25"; loop: true; dur: 7500;">
       </a-sphere>
       
        <a-gltf-model id="cube" src="#glasscube" position="0 2 -5" scale="10 10 10" animation-mixer="loop: repeat;"></a-gltf-model >
