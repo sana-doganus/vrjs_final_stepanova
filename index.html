@@ -18,7 +18,7 @@
             </a-asset-item>
       </a-assets>
       
-      <a-sphere position="5 0.5 -5" rotation="0 0 0" radius="0.5" src="#sphereTexture" animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 200000; loop: true">
+      <a-sphere id="hehe" position="5 0.5 -5" rotation="0 0 0" radius="0.5" src="#sphereTexture" animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 200000; loop: true">
         <!-- <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
           to="0 2.5 -5"></a-animation>
         <a-animation attribute="rotation" begin="click" dur="2000" to="360 0 360"></a-animation>
@@ -53,10 +53,10 @@
       </a-camera>
     </a-scene>
     <script>
-      var el = document.querySelector('#cube');
+      var el = document.querySelector('#hehe');
       console.log(el.hasLoaded);
       console.log(el.getAttribute('position'));
-      console.log(el.getAttribute('scale'));
+      console.log(el.getAttribute('animation'));
     </script>
   </body>
 </html>
